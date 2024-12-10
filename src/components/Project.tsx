@@ -1,4 +1,4 @@
-import React from "react";
+
 
 import mock04 from "../assets/images/mock04.png";
 import mock05 from "../assets/images/mock05.jpg";
