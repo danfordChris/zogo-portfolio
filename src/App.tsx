@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, {useState, useEffect} from "react";
+
+
+
+import Main from "./components/Main";
+import Timeline from "./components/Timeline";
+import Expertise from "./components/Expertise";
+import Project from "./components/Project";
+import Contact from "./components/Contact";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+import FadeIn from './components/FadeIn';
+import './index.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [mode, setMode] = useState<string>('dark');
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    const handleModeChange = () => {
+        if (mode === 'dark') {
+            setMode('light');
+        } else {
+            setMode('dark');
+        }
+    }
+
+    useEffect(() => {
+        window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+      }, []);
+
+    return (
+    <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
+        <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
+        <FadeIn transitionDuration={700}>
+            <Main/>
+            <Expertise/>
+            <Timeline/>
+            <Project/>
+            <Contact/>
+        </FadeIn>
+        <Footer />
+    </div>
+    );
 }
 
-export default App
+export default App;
