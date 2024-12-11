@@ -5,16 +5,17 @@ import mock05 from "../assets/images/mock05.jpg";
 import mock06 from "../assets/images/mock06.png";
 import mock07 from "../assets/images/mock07.png";
 import mock08 from "../assets/images/mock08.png";
-import mock10 from "../assets/images/ocean .png";
+import mock10 from "../assets/images/ocean.png";
 import "../assets/styles/Project.scss";
 
 
 
 const projects = [
+
     {
-      title: "Ocean E-commerce",
-      description: "This is an e-commerce app that links the manufacturer of the products down to the end-user, simplifying the marketing process.",
-      image: mock10,
+      title: "Nasafiri",
+      description: "A web application aimed at reducing the hassle of transport booking, saving time for passengers, and offering insurance options.",
+      image: mock07,
       link: "",
     },
     {
@@ -24,17 +25,18 @@ const projects = [
       link: "",
     },
     {
+      title: "Ocean E-commerce",
+      description: "This is an e-commerce app that links the manufacturer of the products down to the end-user, simplifying the marketing process.",
+      image: mock10,
+      link: "",
+    },
+    {
       title: "Vikoba+",
       description: "A mobile app that simplifies money management for small-scale groups (Vikoba), making it easy to track expenses and income.",
       image: mock08,
       link: "",
     },
-    {
-      title: "Nasafiri",
-      description: "A web application aimed at reducing the hassle of transport booking, saving time for passengers, and offering insurance options.",
-      image: mock07,
-      link: "",
-    },
+   
     {
       title: "Stock Management",
       description: "A mobile application designed to manage inventory, notify the owner about stock levels, and suggest products to increase annual gains.",
