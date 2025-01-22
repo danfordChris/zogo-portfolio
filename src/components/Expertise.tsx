@@ -1,7 +1,7 @@
 
-import '@fortawesome/free-regular-svg-icons'
+import { faDocker, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
+import '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
@@ -107,7 +107,7 @@ function Expertise() {
             </div>
 
             <div className="activities-container">
-                <h2>Apart from coding, some other activities that I love to do!</h2>
+                <h3>Apart from coding, some other activities that I love to do!</h3>
                 <ul className="activities-list">
                     {activities.map((activity, index) => (
                         <li key={index}>{activity}</li>
