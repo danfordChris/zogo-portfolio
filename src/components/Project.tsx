@@ -1,5 +1,5 @@
 
-
+import mock03 from "../assets/images/mock03.png";
 import mock04 from "../assets/images/mock04.png";
 import mock05 from "../assets/images/mock05.jpg";
 import mock06 from "../assets/images/mock06.png";
@@ -28,14 +28,14 @@ const projects = [
       title: "Ocean E-commerce",
       description: "This is an e-commerce app that links the manufacturer of the products down to the end-user, simplifying the marketing process.",
       image: mock10,
-      link: "",
+      link: "https://play.google.com/store/apps/details?id=com.oceangroup.ocean",
     },
     {
-      title: "Vikoba+",
-      description: "A mobile app that simplifies money management for small-scale groups (Vikoba), making it easy to track expenses and income.",
-      image: mock08,
+      title: "Changisha App",
+      description: "Changisha App is a crowdfunding platform designed to help individuals and groups raise money for various causes, such as medical expenses, education, community projects, and personal emergencies. It simplifies the fundraising process by allowing users to create campaigns, share them with potential donors, and receive contributions seamlessly through mobile money and digital payment methods. The app aims to make financial support more accessible and transparent for those in need.",
+      image: mock03,
       link: "",
-    },
+    }, 
    
     {
       title: "Stock Management",
@@ -47,6 +47,12 @@ const projects = [
       title: "Youtube Downloader",
       description: "A web application using a simple Python library to allow users to download any YouTube video or complete playlist ad-free and fast.",
       image: mock06,
+      link: "",
+    },
+    {
+      title: "Vikoba+",
+      description: "A mobile app that simplifies money management for small-scale groups (Vikoba), making it easy to track expenses and income.",
+      image: mock08,
       link: "",
     },
   ];
