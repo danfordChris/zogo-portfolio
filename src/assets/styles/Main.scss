@@ -63,6 +63,18 @@
     padding-bottom: 30%;
 }
 
+.avatar-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+  background: #20232a;
+  display: block;
+  margin: 0 auto; 
+}
+
 @media screen {
     @media (max-width: 567px) {
         .nav-left{

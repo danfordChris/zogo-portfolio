@@ -14,12 +14,67 @@ function Timeline() {
     <div id="history">
       <div className="items-container">
         <h1>Career History</h1>
+
         <VerticalTimeline>
+
+
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: "white", color: "rgb(39, 40, 34)" }}
+                contentArrowStyle={{ borderRight: "7px solid  white" }}
+                date="2025 - Present"
+                iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
+                icon={<FontAwesomeIcon icon={faBriefcase} />}
+            >
+                <h3 className="vertical-timeline-element-title">
+                    Mobile Engineer
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                    IPF Software {" "}
+                </h4>
+                <p>
+                    <ul>
+                        <li>Contributed to the development of cross platform mobile app using flutter. </li>
+                        <li>
+                            Collaborated with UI/UX team to implement intuitive user flows.                         </li>
+                        <li>Intergrated REST APIs for seamless communication with backend systems. </li>
+                    </ul>
+                </p>
+            </VerticalTimelineElement>
+
+
+
+
+
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: "white", color: "rgb(39, 40, 34)" }}
+                contentArrowStyle={{ borderRight: "7px solid  white" }}
+                date="2023 - Present"
+                iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
+                icon={<FontAwesomeIcon icon={faBriefcase} />}
+            >
+                <h3 className="vertical-timeline-element-title">
+                    Mobile Engineer, Quality Assurance
+                </h3>
+                <h4 className="vertical-timeline-element-subtitle">
+                    Freelancing{" "}
+                </h4>
+                <p>
+                    <ul>
+                        <li>Developed and maintained cross-platform mobile applications using Flutter, ensuring high performance and consistent UI across Android and iOS</li>
+                        <li>
+                            Participated in code reviews to maintain clean, scalable, and maintainable codebases
+                        </li>
+                        <li>Improved application performance and user experience</li>
+                    </ul>
+                </p>
+            </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
             contentStyle={{ background: "white", color: "rgb(39, 40, 34)" }}
             contentArrowStyle={{ borderRight: "7px solid  white" }}
-            date="2023 - Present"
+            date="2023 - 2025"
             iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
@@ -42,7 +97,7 @@ function Timeline() {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2022-Present"
+            date="2022-2023"
             iconStyle={{ background: "#5000ca", color: "rgb(39, 40, 34)" }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >

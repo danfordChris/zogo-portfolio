@@ -14,6 +14,7 @@ function Main() {
           <img 
             src= {Avater }
             alt="Avatar" 
+            className="avatar-img"
           />
         </div>
         <div className="content">
@@ -48,7 +49,7 @@ function Main() {
       </p>
           <div className="resume-button">
             <a 
-              href="https://drive.google.com/file/d/1u4WHQJ28bDVbg9RLs8br8W0j5ee4bePt/view?usp=drive_link" 
+              href="https://drive.google.com/file/d/1HjBL1jao2V9kvAxCrA8fAXlWl1e-jied/view?usp=sharing"
               target="_blank" 
               rel="noreferrer" 
               className="btn btn-primary"

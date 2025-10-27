@@ -14,7 +14,7 @@ const labelsFirst = [
     "CSS3",
     "SASS",
     "Flask",
-    "Djangio",
+    "Django",
     "Python",
     "java",
     "SQL",
