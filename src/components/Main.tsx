@@ -6,7 +6,12 @@ import { ReactTyped } from "react-typed";
 import Avater from '../assets/images/avater.jpg';
 import '../assets/styles/Main.scss';
 
-function Main() {
+interface MainProps {
+  isMuted: boolean;
+  handleMuteToggle: () => void;
+}
+
+function Main({ isMuted, handleMuteToggle }: MainProps) {
   return (
     <div className="container">
       <div className="about-section">
@@ -47,8 +52,8 @@ function Main() {
           showCursor={true}
         />
       </p>
-          <div className="resume-button">
-            <a 
+          <div className="resume-actions">
+            <a
               href="https://drive.google.com/file/d/1HjBL1jao2V9kvAxCrA8fAXlWl1e-jied/view?usp=sharing"
               target="_blank" 
               rel="noreferrer" 
@@ -56,6 +61,13 @@ function Main() {
             >
               View Resume
             </a>
+            <button
+              type="button"
+              onClick={handleMuteToggle}
+              className="btn btn-secondary"
+            >
+              {isMuted ? 'Listen Resume' : 'Pause Resume'}
+            </button>
           </div>
         </div>
       </div>

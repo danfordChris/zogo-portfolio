@@ -15,7 +15,7 @@ import micTestAudio from './assets/audio/cv_audio_info.m4a';
 
 function App() {
     const [mode, setMode] = useState<string>('dark');
-    const [isMuted, setIsMuted] = useState<boolean>(true); // Start muted
+    const [isMuted, setIsMuted] = useState<boolean>(true);
     const audioRef = useRef<HTMLAudioElement | null>(null);
 
     const handleModeChange = () => {
@@ -38,24 +38,6 @@ function App() {
                 audioRef.current.pause();
             }
         }
-        // No cleanup needed
-    }, [isMuted]);
-    
-    useEffect(() => {
-        let hasUnmutedOnScroll = false;
-        const handleScroll = () => {
-            if (!hasUnmutedOnScroll && isMuted) {
-                setIsMuted(false);
-                hasUnmutedOnScroll = true;
-                window.removeEventListener('scroll', handleScroll);
-            }
-        };
-        if (isMuted) {
-            window.addEventListener('scroll', handleScroll, { passive: true }); 
-        }
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
     }, [isMuted]);
 
     const handleMuteToggle = () => {
@@ -66,14 +48,14 @@ function App() {
     <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
         <Navigation parentToChild={{mode}} modeChange={handleModeChange} isMuted={isMuted} handleMuteToggle={handleMuteToggle}/>
         <FadeIn transitionDuration={700}>
-            <Main/>
+            <Main isMuted={isMuted} handleMuteToggle={handleMuteToggle} />
             <Expertise/>
             <Timeline/>
             <Project/>
             <Contact/>
         </FadeIn>
         <Footer />
-        {/* Hidden audio element, control via ref */}
+        {/* Hidden audio element, controlled by explicit user action. */}
         <audio
           ref={audioRef}
           src={micTestAudio}
