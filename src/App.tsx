@@ -1,20 +1,20 @@
 import  {useState, useEffect, useRef} from "react";
-
-
-
-import Main from "./components/Main";
+import ModernHero from "./components/ModernHero";
 import Timeline from "./components/Timeline";
 import Expertise from "./components/Expertise";
-import Project from "./components/Project";
+import { ModernProjects } from "./components/projects";
 import Contact from "./components/Contact";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
+import ModernNavigation from "./components/ModernNavigation";
+import ModernFooter from "./components/ModernFooter";
+import ModernLayout from "./components/layout/ModernLayout";
+import { projects } from "./data/projects";
 import FadeIn from './components/FadeIn';
 import './index.css';
+import './styles/animations.css';
 import micTestAudio from './assets/audio/cv_audio_info.m4a';
 
 function App() {
-    const [mode, setMode] = useState<string>('dark');
+    const [mode, setMode] = useState<string>('light');
     const [isMuted, setIsMuted] = useState<boolean>(true);
     const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -45,16 +45,18 @@ function App() {
     }
 
     return (
-    <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
-        <Navigation parentToChild={{mode}} modeChange={handleModeChange} isMuted={isMuted} handleMuteToggle={handleMuteToggle}/>
-        <FadeIn transitionDuration={700}>
-            <Main isMuted={isMuted} handleMuteToggle={handleMuteToggle} />
-            <Expertise/>
-            <Timeline/>
-            <Project/>
-            <Contact/>
-        </FadeIn>
-        <Footer />
+    <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'} transition-colors duration-300`}>
+        <ModernNavigation mode={mode} modeChange={handleModeChange} isMuted={isMuted} handleMuteToggle={handleMuteToggle}/>
+        <ModernHero mode={mode} isMuted={isMuted} handleMuteToggle={handleMuteToggle} />
+        <ModernLayout>
+            <FadeIn transitionDuration={700}>
+                <Expertise />
+                <Timeline/>
+                <ModernProjects projects={projects} mode={mode} />
+                <Contact/>
+            </FadeIn>
+        </ModernLayout>
+        <ModernFooter mode={mode} />
         {/* Hidden audio element, controlled by explicit user action. */}
         <audio
           ref={audioRef}
