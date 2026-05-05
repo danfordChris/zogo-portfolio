@@ -24,10 +24,10 @@ import {
 } from '../assets/images/ipf-os';
 import {
     mealgro_feeds,
-    mealgro_splash,
-    mealgro_settings,
-    mealgro_notifications,
     mealgro_filters,
+    mealgro_notifications,
+    mealgro_settings,
+    mealgro_splash,
 } from '../assets/images/mealgro';
 
 
@@ -51,9 +51,9 @@ export interface Project {
 export const projects: Project[] = [
     {
         id: 'ipf-os',
-        title: 'IPF OS (Web & Mobile Platform)',
+        title: 'IPF OS (Enterprise Operations Platform)',
         description:
-            'A cross-platform super-app platform available on both web and mobile, designed to unify multiple services into a single ecosystem. It includes dynamic onboarding, wallet systems, and real-time transaction tracking using SSE. Built with a modular architecture to support scalable feature expansion without requiring multiple standalone apps.',
+            'A cross-platform enterprise operations system (web & mobile) designed for an InTech construction company to centralize core business functions. It manages meal planning, task management, user roles, and PMO workflows within a unified digital ecosystem. The platform improves operational visibility, coordination, and process control across teams through modular and scalable architecture.',
         image: ipfOsDashboard,
         images: [
             {id: '1', url: ipfOsWebDashboard, title: 'Web Dashboard'},
