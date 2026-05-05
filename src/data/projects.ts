@@ -51,7 +51,7 @@ export interface Project {
 export const projects: Project[] = [
     {
         id: 'ipf-os',
-        title: 'IPF OS (Enterprise Operations Platform)',
+        title: 'IPF OS (Enterprise Platform)',
         description:
             'A cross-platform enterprise operations system (web & mobile) designed for an InTech construction company to centralize core business functions. It manages meal planning, task management, user roles, and PMO workflows within a unified digital ecosystem. The platform improves operational visibility, coordination, and process control across teams through modular and scalable architecture.',
         image: ipfOsDashboard,
