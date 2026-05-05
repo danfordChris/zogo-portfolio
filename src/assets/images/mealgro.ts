@@ -5,9 +5,9 @@ import mealgro_notifications from './mealgro/mealgro-notifications.png';
 import mealgro_filters from './mealgro/mealgro-filters.png';
 
 export {
-  mealgro_feeds,
-  mealgro_splash,
-  mealgro_settings,
-  mealgro_notifications,
-  mealgro_filters,
+    mealgro_feeds,
+    mealgro_splash,
+    mealgro_settings,
+    mealgro_notifications,
+    mealgro_filters,
 };
