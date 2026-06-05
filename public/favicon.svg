@@ -1,0 +1,75 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0369a1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0284c7;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Accent gradient for letter -->
+    <linearGradient id="letterGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f0fe;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Shadow filter -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.3" flood-color="#000000"/>
+    </filter>
+  </defs>
+
+  <!-- Background circles with layers -->
+  <circle cx="256" cy="256" r="256" fill="url(#bgGradient)"/>
+
+  <!-- Darker accent circle -->
+  <circle cx="256" cy="256" r="240" fill="none" stroke="#0369a1" stroke-width="3" opacity="0.4"/>
+
+  <!-- Accent geometric element - top right -->
+  <circle cx="380" cy="130" r="35" fill="#38bdf8" opacity="0.25"/>
+  <circle cx="380" cy="130" r="30" fill="none" stroke="#7dd3fc" stroke-width="2" opacity="0.4"/>
+
+  <!-- Accent geometric element - bottom left -->
+  <circle cx="120" cy="380" r="28" fill="#38bdf8" opacity="0.2"/>
+  <circle cx="120" cy="380" r="24" fill="none" stroke="#7dd3fc" stroke-width="2" opacity="0.3"/>
+
+  <!-- Inner glow circle -->
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#7dd3fc" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Initials DC with shadow and glow -->
+  <g filter="url(#shadow)">
+    <text
+      x="256"
+      y="350"
+      text-anchor="middle"
+      dominant-baseline="middle"
+      font-family="Space Grotesk, 'Arial Black', sans-serif"
+      font-size="280"
+      font-weight="900"
+      fill="url(#letterGradient)"
+      letter-spacing="-0.05em"
+      style="text-shadow: 0 2px 10px rgba(3, 105, 161, 0.3);"
+    >DC</text>
+  </g>
+
+  <!-- Subtle accent lines -->
+  <line x1="100" y1="256" x2="150" y2="256" stroke="#7dd3fc" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
+  <line x1="362" y1="256" x2="412" y2="256" stroke="#7dd3fc" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
+
+  <!-- Top accent line -->
+  <line x1="256" y1="80" x2="256" y2="130" stroke="#7dd3fc" stroke-width="2" opacity="0.3" stroke-linecap="round"/>
+
+  <!-- Decorative dots -->
+  <circle cx="280" cy="100" r="4" fill="#38bdf8" opacity="0.4"/>
+  <circle cx="320" cy="420" r="3" fill="#38bdf8" opacity="0.3"/>
+  <circle cx="180" cy="440" r="3.5" fill="#38bdf8" opacity="0.35"/>
+</svg>
