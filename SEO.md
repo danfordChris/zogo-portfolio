@@ -56,6 +56,26 @@ If you want crawlers to see the *fully designed* page (not just the shell):
 - [ ] **Code-split** heavy libs (MUI, framer-motion, gsap, slick) with `React.lazy` to improve Core Web Vitals / LCP.
 - [ ] **Blog / writing section** (4–6 posts) — fresh, keyword-rich content sustains ranking and gives AI crawlers more to cite. Needs routing (see Phase 1 upgrade) or a static generator.
 
+## ⚠️ Live infrastructure findings (Cloudflare in front of Vercel)
+
+Discovered after first deploy — **these are dashboard fixes, not code:**
+
+1. **Cloudflare hard-blocks AI bots (403).** GPTBot / ClaudeBot / PerplexityBot
+   get `HTTP 403`; normal browsers get `200`. This defeats AI discoverability
+   regardless of `llms.txt`/meta tags.
+   → Cloudflare → **Security → Bots** (and/or **AI Crawl Control**): turn OFF
+   "Block AI bots", or allow PerplexityBot / ChatGPT-User / OAI-SearchBot /
+   ClaudeBot / Claude-Web.
+2. **Managed robots.txt overrides `public/robots.txt`.** Cloudflare serves a
+   "content signals" robots with `ai-train=no` and Disallow for the AI bots.
+   → Disable the managed robots.txt (so our file serves) or set `ai-input=yes`.
+   (`search=yes` is already on, so Google indexing is unaffected.)
+3. **Canonical = apex (decided).** Site currently 308-redirects
+   `danfordchris.dev → www.danfordchris.dev`, but our tags use the apex.
+   → Make **`danfordchris.dev` the PRIMARY domain** (Vercel → Project → Settings
+   → Domains → set apex primary) so the redirect flips to `www → apex`. No repo
+   change needed.
+
 ## 🔜 Phase 4 — Submit, measure, iterate (action required)
 
 ### 1. Google Search Console (REQUIRED)
