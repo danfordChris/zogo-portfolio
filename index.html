@@ -4,14 +4,223 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#0ea5e9" />
-    <meta name="description" content="My personal portfolio website." />
+
+    <!-- Primary SEO -->
+    <title>Danford Chriss — Full Stack, DevOps &amp; Mobile Engineer | danfordchris</title>
+    <meta
+      name="description"
+      content="Danford Chriss (Danford Chris / danfordchris) is a Full Stack Developer, DevOps Engineer, and Flutter Mobile Engineer building scalable web and mobile apps. Explore projects, products like ContentLab, and get in touch."
+    />
+    <meta
+      name="keywords"
+      content="Danford Chriss, Danford Chris, danfordchris, Full Stack Developer, DevOps Engineer, Mobile Engineer, Flutter Developer, React Developer, Tanzania software engineer, ContentLab, portfolio"
+    />
+    <meta name="author" content="Danford Chriss" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://danfordchris.dev/" />
+
+    <!-- Google Search Console verification.
+         Replace the content value with the token from Search Console
+         (Settings → Ownership verification → HTML tag), then redeploy.
+         Alternatively, drop the google<token>.html file Search Console gives you
+         into /public and verify via the "HTML file" method instead. -->
+    <meta name="google-site-verification" content="REPLACE_WITH_YOUR_GSC_TOKEN" />
+
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Danford Chriss" />
+    <meta property="og:title" content="Danford Chriss — Full Stack, DevOps &amp; Mobile Engineer" />
+    <meta
+      property="og:description"
+      content="Full Stack Developer, DevOps Engineer, and Flutter Mobile Engineer. Explore projects, products, and get in touch."
+    />
+    <meta property="og:url" content="https://danfordchris.dev/" />
+    <meta property="og:image" content="https://danfordchris.dev/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Co24669" />
+    <meta name="twitter:creator" content="@Co24669" />
+    <meta name="twitter:title" content="Danford Chriss — Full Stack, DevOps &amp; Mobile Engineer" />
+    <meta
+      name="twitter:description"
+      content="Full Stack Developer, DevOps Engineer, and Flutter Mobile Engineer. Explore projects, products, and get in touch."
+    />
+    <meta name="twitter:image" content="https://danfordchris.dev/og-image.jpg" />
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
-    <title>danfordchris | portfolio</title>
+    <!-- Structured data: Person + WebSite + ProfilePage.
+         Powers Google knowledge panel / rich results for "Danford Chris". -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://danfordchris.dev/#person",
+            "name": "Danford Chriss",
+            "alternateName": ["Danford Chris", "danfordchris"],
+            "url": "https://danfordchris.dev/",
+            "image": "https://danfordchris.dev/og-image.jpg",
+            "jobTitle": "Full Stack Developer, DevOps Engineer & Mobile Engineer",
+            "description": "Full Stack Developer, DevOps Engineer, and Flutter Mobile Engineer building scalable web and mobile applications, with a focus on GenAI/ML.",
+            "knowsAbout": [
+              "Full Stack Web Development",
+              "React",
+              "TypeScript",
+              "Node.js",
+              "Flutter",
+              "Dart",
+              "DevOps & Automation",
+              "Generative AI",
+              "Machine Learning"
+            ],
+            "sameAs": [
+              "https://github.com/danfordChris",
+              "https://www.linkedin.com/in/danford-chriss-438364240",
+              "https://x.com/Co24669",
+              "https://www.instagram.com/royz_chriss/",
+              "https://contentlab.danfordchris.dev"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://danfordchris.dev/#website",
+            "url": "https://danfordchris.dev/",
+            "name": "Danford Chriss — Portfolio",
+            "publisher": { "@id": "https://danfordchris.dev/#person" },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://danfordchris.dev/#profilepage",
+            "url": "https://danfordchris.dev/",
+            "name": "Danford Chriss — Full Stack, DevOps & Mobile Engineer",
+            "isPartOf": { "@id": "https://danfordchris.dev/#website" },
+            "about": { "@id": "https://danfordchris.dev/#person" },
+            "mainEntity": { "@id": "https://danfordchris.dev/#person" }
+          }
+        ]
+      }
+    </script>
+
+    <!-- Structured data: project portfolio (ItemList) + breadcrumbs. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Projects by Danford Chriss",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "item": { "@type": "WebApplication", "name": "ContentLab", "url": "https://contentlab.danfordchris.dev", "applicationCategory": "ContentManagementApplication", "author": { "@id": "https://danfordchris.dev/#person" }, "description": "AI-powered content product." } },
+          { "@type": "ListItem", "position": 2, "item": { "@type": "SoftwareApplication", "name": "IPF OS (Enterprise Platform)", "applicationCategory": "BusinessApplication", "operatingSystem": "Web, Android, iOS", "author": { "@id": "https://danfordchris.dev/#person" }, "description": "Cross-platform enterprise operations system: meal planning, task management, user roles, and PMO workflows." } },
+          { "@type": "ListItem", "position": 3, "item": { "@type": "SoftwareApplication", "name": "Bantu Soko", "applicationCategory": "TravelApplication", "operatingSystem": "Android", "url": "https://play.google.com/store/apps/details?id=tz.bantu.soko.android", "author": { "@id": "https://danfordchris.dev/#person" }, "description": "Super-app for transport, event planning, and marketplace services." } },
+          { "@type": "ListItem", "position": 4, "item": { "@type": "SoftwareApplication", "name": "Ocean E-commerce", "applicationCategory": "ShoppingApplication", "operatingSystem": "Web, Android", "url": "https://play.google.com/store/apps/details?id=com.oceangroup.ocean", "author": { "@id": "https://danfordchris.dev/#person" }, "description": "Manufacturer-to-end-user e-commerce platform." } },
+          { "@type": "ListItem", "position": 5, "item": { "@type": "SoftwareApplication", "name": "Solomon StockBroker", "applicationCategory": "FinanceApplication", "operatingSystem": "Android, iOS", "author": { "@id": "https://danfordchris.dev/#person" }, "description": "Stock-trading mobile app with real-time market data." } },
+          { "@type": "ListItem", "position": 6, "item": { "@type": "SoftwareApplication", "name": "Imbeju CRDB", "applicationCategory": "FinanceApplication", "operatingSystem": "Android", "author": { "@id": "https://danfordchris.dev/#person" }, "description": "Offline-first community savings (VIKOBA) finance app." } },
+          { "@type": "ListItem", "position": 7, "item": { "@type": "SoftwareApplication", "name": "MealGro", "applicationCategory": "LifestyleApplication", "operatingSystem": "Android, iOS", "author": { "@id": "https://danfordchris.dev/#person" }, "description": "Meal-planning app that reduces food waste." } },
+          { "@type": "ListItem", "position": 8, "item": { "@type": "SoftwareApplication", "name": "Tumafast", "applicationCategory": "TravelApplication", "operatingSystem": "Android", "author": { "@id": "https://danfordchris.dev/#person" }, "description": "On-demand local delivery and logistics app." } },
+          { "@type": "ListItem", "position": 9, "item": { "@type": "SoftwareApplication", "name": "Changisha", "applicationCategory": "FinanceApplication", "operatingSystem": "Web", "author": { "@id": "https://danfordchris.dev/#person" }, "description": "Crowdfunding platform with mobile-money payments." } },
+          { "@type": "ListItem", "position": 10, "item": { "@type": "SoftwareApplication", "name": "Cypherz", "applicationCategory": "BusinessApplication", "operatingSystem": "Web", "author": { "@id": "https://danfordchris.dev/#person" }, "description": "Agriculture marketplace removing middlemen between buyers and sellers." } }
+        ]
+      }
+    </script>
+
+    <!-- Breadcrumbs drive Google sitelink layout. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://danfordchris.dev/" },
+          { "@type": "ListItem", "position": 2, "name": "Projects", "item": "https://danfordchris.dev/#projects" },
+          { "@type": "ListItem", "position": 3, "name": "Contact", "item": "https://danfordchris.dev/#contact" }
+        ]
+      }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Static, crawlable content for search engines and AI agents that do not
+           execute JavaScript. React replaces this entirely on mount for real users.
+           Keep the key facts here in sync with the live site. -->
+      <main style="max-width:880px;margin:0 auto;padding:40px 20px;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;color:#1f2937;">
+        <header>
+          <h1 style="font-size:2rem;margin:0 0 4px;">Danford Chriss</h1>
+          <p style="margin:0 0 16px;color:#0ea5e9;font-weight:600;">
+            Full Stack Developer · DevOps Engineer · Mobile (Flutter) Engineer · GenAI/ML
+          </p>
+          <p>
+            Danford Chriss (also known as <strong>Danford Chris</strong> or
+            <strong>danfordchris</strong>) is a software engineer who builds scalable web
+            and mobile applications across fintech, e-commerce, agriculture, logistics, and
+            enterprise operations. Explore the work below or
+            <a href="#contact">get in touch</a>.
+          </p>
+        </header>
+
+        <section id="expertise">
+          <h2>Expertise</h2>
+          <ul>
+            <li><strong>Full-Stack Web:</strong> React, TypeScript, Node.js, REST APIs, PostgreSQL, MongoDB, Tailwind CSS, Material UI</li>
+            <li><strong>Mobile:</strong> Flutter, Dart, React Native, offline-first/SQLite, Firebase</li>
+            <li><strong>DevOps &amp; Automation:</strong> CI/CD, AWS, Vercel, monitoring, Server-Sent Events</li>
+            <li><strong>GenAI &amp; ML:</strong> applied AI features and tooling</li>
+          </ul>
+        </section>
+
+        <section id="history">
+          <h2>Experience</h2>
+          <ul>
+            <li>2025–Present — Mobile Engineer, IPF Software</li>
+            <li>2023–Present — Mobile Engineer &amp; QA, Freelance</li>
+            <li>2023–2025 — Flutter Developer, Ocean Tech Startup</li>
+            <li>2022–2023 — Backend Developer &amp; DevOps Engineer, Trilabs Limited</li>
+            <li>2022–2024 — Web Designer, Finhub Community</li>
+            <li>2020–2021 — Web Developer &amp; UI/UX Designer, Software Development Club</li>
+          </ul>
+        </section>
+
+        <section id="products">
+          <h2>Products</h2>
+          <ul>
+            <li><a href="https://contentlab.danfordchris.dev"><strong>ContentLab</strong></a> — AI-powered content product by Danford Chriss.</li>
+          </ul>
+        </section>
+
+        <section id="projects">
+          <h2>Selected projects</h2>
+          <ul>
+            <li><strong>IPF OS</strong> — Cross-platform enterprise operations system (meals, tasks, roles, PMO).</li>
+            <li><strong>Bantu Soko</strong> — Super-app for transport, events, and marketplace. <a href="https://play.google.com/store/apps/details?id=tz.bantu.soko.android">Google Play</a></li>
+            <li><strong>Ocean E-commerce</strong> — Manufacturer-to-consumer commerce. <a href="https://play.google.com/store/apps/details?id=com.oceangroup.ocean">Google Play</a></li>
+            <li><strong>Solomon StockBroker</strong> — Stock trading app with real-time market data.</li>
+            <li><strong>Imbeju CRDB</strong> — Offline-first community savings (VIKOBA) finance app.</li>
+            <li><strong>MealGro</strong> — Meal planning that reduces food waste.</li>
+            <li><strong>Tumafast</strong> — On-demand local delivery and logistics.</li>
+            <li><strong>Changisha</strong> — Crowdfunding with mobile-money payments.</li>
+            <li><strong>Nasafiri</strong> — Transport booking with insurance options.</li>
+            <li><strong>Cypherz</strong> — Agriculture marketplace removing middlemen.</li>
+            <li><strong>Vikoba+</strong> — Money management for community savings groups.</li>
+          </ul>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>Find Danford Chriss online:</p>
+          <ul>
+            <li><a href="https://github.com/danfordChris">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/danford-chriss-438364240">LinkedIn</a></li>
+            <li><a href="https://x.com/Co24669">X (Twitter)</a></li>
+            <li><a href="https://www.instagram.com/royz_chriss/">Instagram</a></li>
+          </ul>
+        </section>
+      </main>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">

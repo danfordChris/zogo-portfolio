@@ -45,7 +45,9 @@ const ModernProjectCard: React.FC<ModernProjectCardProps> = ({
         >
           <motion.img
             src={project.image}
-            alt={project.title}
+            alt={`${project.title} — project by Danford Chriss`}
+            loading="lazy"
+            decoding="async"
             className="w-full h-full object-cover"
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}

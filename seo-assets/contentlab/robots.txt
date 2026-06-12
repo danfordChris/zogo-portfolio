@@ -1,0 +1,15 @@
+# robots.txt for contentlab.danfordchris.dev
+User-agent: *
+Allow: /
+
+# Welcome AI / LLM crawlers
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://contentlab.danfordchris.dev/sitemap.xml

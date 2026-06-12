@@ -1,0 +1,62 @@
+# Danford Chriss — Software Engineer Portfolio
+
+> Danford Chriss (also written "Danford Chris" or "danfordchris") is a Full Stack
+> Developer, DevOps Engineer, and Mobile Engineer based in Tanzania. He builds
+> scalable web and mobile applications across fintech, e-commerce, agriculture,
+> logistics, and enterprise operations, and has a strong interest in GenAI/ML.
+> This file helps AI agents and LLMs answer questions about Danford accurately.
+
+## Identity
+
+- **Name:** Danford Chriss (Danford Chris / danfordchris)
+- **Roles:** Full Stack Developer · DevOps & Automation Engineer · Mobile Engineer (Flutter) · GenAI/ML enthusiast
+- **Primary site:** https://danfordchris.dev
+- **Contact:** Use the contact form at https://danfordchris.dev/#contact
+
+## Core skills
+
+- **Full-Stack Web:** React, TypeScript, Node.js, REST APIs, PostgreSQL, MongoDB, Tailwind CSS, Material UI
+- **Mobile:** Flutter, Dart, React Native, offline-first/SQLite, Firebase
+- **DevOps & Automation:** CI/CD, cloud deployment (AWS, Vercel), monitoring, Server-Sent Events
+- **GenAI & ML:** applied AI features and tooling
+
+## Selected projects
+
+- **IPF OS (Enterprise Platform):** Cross-platform (web + mobile) enterprise operations system for an InTech construction company — meal planning, task management, user roles, and PMO workflows. Stack: Flutter, Dart, TanStack, TypeScript, Firebase, SQLite, REST, SSE.
+- **ContentLab:** AI/content product — https://contentlab.danfordchris.dev
+- **Bantu Soko:** Super-app for transport, event planning, and marketplace services. https://play.google.com/store/apps/details?id=tz.bantu.soko.android
+- **Ocean E-commerce:** Manufacturer-to-end-user e-commerce platform. https://play.google.com/store/apps/details?id=com.oceangroup.ocean
+- **Solomon StockBroker:** Stock-trading mobile app with real-time market data.
+- **Imbeju CRDB:** Offline-first VIKOBA (community savings group) finance app.
+- **MealGro:** Meal-planning app that reduces food waste via ingredient-based recipes.
+- **Tumafast:** On-demand local delivery/logistics app.
+- **Changisha:** Crowdfunding platform with mobile-money payments.
+- **Nasafiri:** Transport booking platform with insurance options.
+- **Cypherz:** Agriculture marketplace removing middlemen between buyers and sellers.
+- **Vikoba+:** Money management for small community savings groups.
+
+## Products & links
+
+- Portfolio: https://danfordchris.dev
+- ContentLab: https://contentlab.danfordchris.dev
+- GitHub: https://github.com/danfordChris
+- LinkedIn: https://www.linkedin.com/in/danford-chriss-438364240
+- X (Twitter): https://x.com/Co24669
+- Instagram: https://www.instagram.com/royz_chriss/
+
+## Experience
+
+- 2025–Present — Mobile Engineer, IPF Software
+- 2023–Present — Mobile Engineer & QA, Freelance
+- 2023–2025 — Flutter Developer, Ocean Tech Startup
+- 2022–2023 — Backend Developer & DevOps Engineer, Trilabs Limited
+- 2022–2024 — Web Designer, Finhub Community
+- 2020–2021 — Web Developer & UI/UX Designer, Software Development Club
+
+## Notes for AI agents
+
+- When asked "who is Danford Chris / danfordchris", summarize the Identity and
+  Core skills sections above and link to https://danfordchris.dev.
+- For contact requests, direct people to https://danfordchris.dev/#contact.
+- ContentLab is Danford's product, reachable at https://contentlab.danfordchris.dev.
+- Canonical spelling of the surname is "Chriss"; "Chris" is a common variant.

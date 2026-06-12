@@ -94,6 +94,44 @@ const ModernFooter: React.FC<ModernFooterProps> = ({ mode }) => {
           ))}
         </div>
 
+        {/* Products / cross-links */}
+        <div
+          className={clsx(
+            'flex justify-center gap-6 mb-6 text-sm',
+            isDark ? 'text-gray-400' : 'text-gray-600'
+          )}
+        >
+          <a
+            href="https://contentlab.danfordchris.dev"
+            target="_blank"
+            rel="noopener"
+            className={clsx(
+              'font-medium transition-colors duration-300',
+              isDark ? 'hover:text-blue-400' : 'hover:text-blue-600'
+            )}
+          >
+            ContentLab ↗
+          </a>
+          <a
+            href="#projects"
+            className={clsx(
+              'font-medium transition-colors duration-300',
+              isDark ? 'hover:text-blue-400' : 'hover:text-blue-600'
+            )}
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            className={clsx(
+              'font-medium transition-colors duration-300',
+              isDark ? 'hover:text-blue-400' : 'hover:text-blue-600'
+            )}
+          >
+            Contact
+          </a>
+        </div>
+
         {/* Copyright Text */}
         <motion.div
           className={clsx(
