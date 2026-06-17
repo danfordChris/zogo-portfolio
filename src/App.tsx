@@ -1,4 +1,5 @@
 import  {useState, useEffect, useRef} from "react";
+import { Analytics } from '@vercel/analytics/react';
 import ModernHero from "./components/ModernHero";
 import Timeline from "./components/Timeline";
 import Expertise from "./components/Expertise";
@@ -64,6 +65,7 @@ function App() {
           loop
           style={{display: 'none'}}
         />
+        <Analytics />
     </div>
     );
 } 
