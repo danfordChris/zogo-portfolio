@@ -167,7 +167,7 @@ const ModernHero: React.FC<ModernHeroProps> = ({mode, isMuted, handleMuteToggle}
                                     isDark ? 'text-blue-400' : 'text-blue-600'
                                 )}
                             >
-                                Welcome to my portfolio ✨
+                                Dar es Salaam, Tanzania
                             </p>
                         </motion.div>
 
@@ -234,10 +234,10 @@ const ModernHero: React.FC<ModernHeroProps> = ({mode, isMuted, handleMuteToggle}
                             <span className={clsx('ml-2', isDark ? 'text-blue-400' : 'text-blue-600')}>
                 <ReactTyped
                     strings={[
+                        'Mobile Engineer',
+                        'Flutter Developer',
                         'Full Stack Developer',
                         'DevOps Engineer',
-                        'Mobile Developer',
-                        'ML/AI Enthusiast',
                     ]}
                     typeSpeed={80}
                     backSpeed={50}
@@ -256,7 +256,8 @@ const ModernHero: React.FC<ModernHeroProps> = ({mode, isMuted, handleMuteToggle}
                             variants={itemVariants}
                         >
                             Passionate about building scalable applications and solving complex problems with innovative
-                            solutions. Let's create something amazing together!
+                            solutions. I work across Flutter, React, TypeScript, Python, and
+                            DevOps to help teams launch reliable digital products.
                         </motion.p>
 
                         {/* CTA Buttons */}

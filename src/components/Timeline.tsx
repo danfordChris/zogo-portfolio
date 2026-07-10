@@ -32,14 +32,11 @@ function Timeline() {
                 <h4 className="vertical-timeline-element-subtitle">
                     IPF Software {" "}
                 </h4>
-                <p>
-                    <ul>
-                        <li>Contributed to the development of cross platform mobile app using flutter. </li>
-                        <li>
-                            Collaborated with UI/UX team to implement intuitive user flows.                         </li>
-                        <li>Intergrated REST APIs for seamless communication with backend systems. </li>
-                    </ul>
-                </p>
+                <ul>
+                    <li>Contributed to the development of cross-platform mobile applications using Flutter.</li>
+                    <li>Collaborated with the UI/UX team to implement intuitive user flows.</li>
+                    <li>Integrated REST APIs for seamless communication with backend systems.</li>
+                </ul>
             </VerticalTimelineElement>
 
 
@@ -60,15 +57,11 @@ function Timeline() {
                 <h4 className="vertical-timeline-element-subtitle">
                     Freelancing{" "}
                 </h4>
-                <p>
-                    <ul>
-                        <li>Developed and maintained cross-platform mobile applications using Flutter, ensuring high performance and consistent UI across Android and iOS</li>
-                        <li>
-                            Participated in code reviews to maintain clean, scalable, and maintainable codebases
-                        </li>
-                        <li>Improved application performance and user experience</li>
-                    </ul>
-                </p>
+                <ul>
+                    <li>Developed and maintained cross-platform mobile applications using Flutter for Android and iOS.</li>
+                    <li>Participated in code reviews to maintain clean, scalable, and maintainable codebases.</li>
+                    <li>Improved application performance and user experience.</li>
+                </ul>
             </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -84,16 +77,11 @@ function Timeline() {
             <h4 className="vertical-timeline-element-subtitle">
               Ocean Tech Startup{" "}
             </h4>
-            <p>
-              <ul>
-                <li>Developed an e-commerce application using Flutter</li>
-                <li>
-                  Integrated Firebase for authentication, real-time database,
-                  and cloud storage
-                </li>
-                <li>Improved application performance and user experience</li>
-              </ul>
-            </p>
+            <ul>
+              <li>Developed an e-commerce application using Flutter.</li>
+              <li>Integrated Firebase for authentication, real-time database, and cloud storage.</li>
+              <li>Improved application performance and user experience.</li>
+            </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -107,25 +95,12 @@ function Timeline() {
             <h4 className="vertical-timeline-element-subtitle">
               Trilabs Limited
             </h4>
-            <p>
-              <ul>
-                <li>
-                  Develop custom web design solutions and intergrate with AI{" "}
-                </li>
-                <li>
-                  Intergrate the payment system to the online Transport booking
-                  system
-                </li>
-                <li>
-                  Develop the rest Api that with communicate with the
-                  application for easy booking process
-                </li>
-                <li>
-                  Ensure countinuous intergration and deployment to ensure early
-                  delivery of the application
-                </li>
-              </ul>
-            </p>
+            <ul>
+              <li>Developed custom web solutions and integrated AI-assisted capabilities.</li>
+              <li>Integrated payment systems into an online transport booking platform.</li>
+              <li>Built REST APIs to support a smooth booking experience across applications.</li>
+              <li>Managed continuous integration and deployment workflows for faster delivery.</li>
+            </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -137,16 +112,11 @@ function Timeline() {
             <h4 className="vertical-timeline-element-subtitle">
               Finhub community
             </h4>
-            <p>
-              <ul>
-                <li>Develop custom web design solutions </li>
-                <li>
-                  Collaborated with corporations and helped them build powerful
-                  websites{" "}
-                </li>
-                <li>Designed an e-commerce web app</li>
-              </ul>
-            </p>
+            <ul>
+              <li>Developed custom web design solutions.</li>
+              <li>Collaborated with organizations to build strong web experiences.</li>
+              <li>Designed an e-commerce web app.</li>
+            </ul>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -160,12 +130,10 @@ function Timeline() {
             <h4 className="vertical-timeline-element-subtitle">
               Software development club{" "}
             </h4>
-            <p>
-              <ul>
-                <li>Develop custom web design solutions </li>
-                <li>Designed an e-commerce web app </li>
-              </ul>
-            </p>
+            <ul>
+              <li>Developed custom web design solutions.</li>
+              <li>Designed an e-commerce web app.</li>
+            </ul>
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
