@@ -102,6 +102,15 @@ const ModernFooter: React.FC<ModernFooterProps> = ({ mode }) => {
           )}
         >
           <a
+            href="#services"
+            className={clsx(
+              'font-medium transition-colors duration-300',
+              isDark ? 'hover:text-blue-400' : 'hover:text-blue-600'
+            )}
+          >
+            Services
+          </a>
+          <a
             href="https://contentlab.danfordchris.dev"
             target="_blank"
             rel="noopener"

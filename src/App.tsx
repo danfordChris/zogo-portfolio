@@ -1,5 +1,6 @@
 import  {useState, useEffect, useRef} from "react";
 import ModernHero from "./components/ModernHero";
+import Services from "./components/Services";
 import Timeline from "./components/Timeline";
 import Expertise from "./components/Expertise";
 import { ModernProjects } from "./components/projects";
@@ -50,6 +51,7 @@ function App() {
         <ModernHero mode={mode} isMuted={isMuted} handleMuteToggle={handleMuteToggle} />
         <ModernLayout>
             <FadeIn transitionDuration={700}>
+                <Services mode={mode} />
                 <Expertise />
                 <Timeline/>
                 <ModernProjects projects={projects} mode={mode} />

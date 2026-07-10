@@ -11,6 +11,7 @@ interface NavigationProps {
 }
 
 const navItems = [
+    {label: 'Services', id: 'services'},
     {label: 'Expertise', id: 'expertise'},
     {label: 'History', id: 'history'},
     {label: 'Projects', id: 'projects'},
