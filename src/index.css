@@ -148,7 +148,9 @@ li, p, a, h1, h2, h3, h4, h5, label, button {
   }
 
   .about-section {
-    background-image: url("./assets/images/bg-light.png");
+    background-image:
+      radial-gradient(circle at top left, rgba(59, 130, 246, 0.15), transparent 45%),
+      linear-gradient(135deg, rgba(248, 250, 252, 0.95), rgba(219, 234, 254, 0.8));
   }
 
   .skills-container svg {

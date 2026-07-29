@@ -13,7 +13,6 @@ import { projects } from "./data/projects";
 import FadeIn from './components/FadeIn';
 import './index.css';
 import './styles/animations.css';
-import micTestAudio from './assets/audio/cv_audio_info.m4a';
 
 function App() {
     const [mode, setMode] = useState<string>('light');
@@ -64,7 +63,7 @@ function App() {
         {/* Hidden audio element, controlled by explicit user action. */}
         <audio
           ref={audioRef}
-          src={micTestAudio}
+          src=""
           loop
           style={{display: 'none'}}
         />

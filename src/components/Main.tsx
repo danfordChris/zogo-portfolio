@@ -3,8 +3,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { ReactTyped } from "react-typed";
-import Avater from '../assets/images/avater.jpg';
 import '../assets/styles/Main.scss';
+import { makePlaceholderAvatar } from '../lib/placeholders';
 
 interface MainProps {
   isMuted: boolean;
@@ -12,12 +12,14 @@ interface MainProps {
 }
 
 function Main({ isMuted, handleMuteToggle }: MainProps) {
+  const avatarImage = makePlaceholderAvatar('Danford Chriss');
+
   return (
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
           <img 
-            src= {Avater }
+            src={avatarImage}
             alt="Avatar" 
             className="avatar-img"
           />

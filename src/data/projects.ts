@@ -1,34 +1,32 @@
-import ssb from '../assets/images/ssb.png';
-import bantuSoko from '../assets/images/bantuSoko.png';
-import imbeju from '../assets/images/imbeju.png';
-import codeChallenge from '../assets/images/code_challenge.png';
-import tumafast from '../assets/images/tumafast.jpeg';
-import tetris from '../assets/images/tetris.jpeg';
-import mock05 from '../assets/images/mock05.jpg';
-import mock10 from '../assets/images/ocean.png';
-import mock03 from '../assets/images/changisha.png';
-import mock07 from '../assets/images/mock07.png';
-import mock04 from '../assets/images/mock04.png';
-import mock08 from '../assets/images/mock08.png';
-import {
-    ipfOsDashboard,
-    ipfOsMeals,
-    ipfOsPmo,
-    ipfOsTasks,
-    ipfOsUserManagement,
-    ipfOsWebDashboard,
-    ipfOsWebMeals,
-    ipfOsWebPmo,
-    ipfOsWebTasks,
-    ipfOsWebUser,
-} from '../assets/images/ipf-os';
-import {
-    mealgro_feeds,
-    mealgro_filters,
-    mealgro_notifications,
-    mealgro_settings,
-    mealgro_splash,
-} from '../assets/images/mealgro';
+import { makePlaceholderImage } from '../lib/placeholders';
+
+const bantuSoko = makePlaceholderImage('Bantu Soko');
+const codeChallenge = makePlaceholderImage('Code Challenge');
+const tumafast = makePlaceholderImage('Tumafast');
+const tetris = makePlaceholderImage('Tetris Game');
+const mock05 = makePlaceholderImage('Stock Management');
+const mock10 = makePlaceholderImage('Ocean E-commerce');
+const mock03 = makePlaceholderImage('Changisha');
+const mock07 = makePlaceholderImage('Nasafiri');
+const mock04 = makePlaceholderImage('Cypherz');
+const mock08 = makePlaceholderImage('Vikoba+');
+
+const ipfOsDashboard = makePlaceholderImage('IPF OS Dashboard', ['#0f172a', '#0ea5e9']);
+const ipfOsMeals = makePlaceholderImage('IPF OS Meals', ['#0f172a', '#14b8a6']);
+const ipfOsPmo = makePlaceholderImage('IPF OS PMO', ['#0f172a', '#8b5cf6']);
+const ipfOsTasks = makePlaceholderImage('IPF OS Tasks', ['#0f172a', '#f97316']);
+const ipfOsUserManagement = makePlaceholderImage('IPF OS Users', ['#0f172a', '#22c55e']);
+const ipfOsWebDashboard = makePlaceholderImage('IPF OS Web Dashboard', ['#111827', '#2563eb']);
+const ipfOsWebMeals = makePlaceholderImage('IPF OS Web Meals', ['#111827', '#0ea5e9']);
+const ipfOsWebPmo = makePlaceholderImage('IPF OS Web PMO', ['#111827', '#8b5cf6']);
+const ipfOsWebTasks = makePlaceholderImage('IPF OS Web Tasks', ['#111827', '#f97316']);
+const ipfOsWebUser = makePlaceholderImage('IPF OS Web Users', ['#111827', '#22c55e']);
+
+const mealgro_splash = makePlaceholderImage('MealGro Splash', ['#111827', '#16a34a']);
+const mealgro_feeds = makePlaceholderImage('MealGro Feeds', ['#111827', '#10b981']);
+const mealgro_filters = makePlaceholderImage('MealGro Filters', ['#111827', '#06b6d4']);
+const mealgro_notifications = makePlaceholderImage('MealGro Notifications', ['#111827', '#6366f1']);
+const mealgro_settings = makePlaceholderImage('MealGro Settings', ['#111827', '#f43f5e']);
 
 
 export interface ProjectImage {

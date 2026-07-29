@@ -1,10 +1,8 @@
 import React from 'react';
 import {motion} from 'framer-motion';
 import {ReactTyped} from 'react-typed';
-import Avatar from '../assets/images/avater.jpg';
-import bgLight from '../assets/images/bg-light.png';
-import bgDark from '../assets/images/bg-dark.png';
 import clsx from 'clsx';
+import { makePlaceholderAvatar } from '../lib/placeholders';
 
 interface ModernHeroProps {
     mode: string;
@@ -78,7 +76,10 @@ const ModernHero: React.FC<ModernHeroProps> = ({mode, isMuted, handleMuteToggle}
         },
     };
 
-    const bgImage = isDark ? bgDark : bgLight;
+    const bgImage = isDark
+        ? 'radial-gradient(circle at top left, rgba(37, 99, 235, 0.35), transparent 40%), linear-gradient(135deg, #020617 0%, #0f172a 55%, #111827 100%)'
+        : 'radial-gradient(circle at top left, rgba(59, 130, 246, 0.25), transparent 40%), linear-gradient(135deg, #f8fafc 0%, #dbeafe 55%, #eff6ff 100%)';
+    const avatarImage = makePlaceholderAvatar('Danford Chriss');
 
     return (
         <section
@@ -87,7 +88,7 @@ const ModernHero: React.FC<ModernHeroProps> = ({mode, isMuted, handleMuteToggle}
                 'min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden'
             )}
             style={{
-                backgroundImage: `url(${bgImage})`,
+                backgroundImage: bgImage,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundAttachment: 'fixed',
@@ -200,7 +201,7 @@ const ModernHero: React.FC<ModernHeroProps> = ({mode, isMuted, handleMuteToggle}
                                 }}
                             >
                                 <img
-                                    src={Avatar}
+                                    src={avatarImage}
                                     alt="Danford Chriss"
                                     className="w-full h-full object-cover"
                                 />
@@ -315,7 +316,7 @@ const ModernHero: React.FC<ModernHeroProps> = ({mode, isMuted, handleMuteToggle}
                             }}
                         >
                             <img
-                                src={Avatar}
+                                src={avatarImage}
                                 alt="Danford Chriss"
                                 className="w-full h-full object-cover"
                             />
