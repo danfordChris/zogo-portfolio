@@ -11,10 +11,11 @@ interface NavigationProps {
 }
 
 const navItems = [
+    {label: 'Products', id: 'products'},
     {label: 'Services', id: 'services'},
     {label: 'Expertise', id: 'expertise'},
     {label: 'History', id: 'history'},
-    {label: 'Projects', id: 'projects'},
+    {label: 'Work', id: 'projects'},
     {label: 'Contact', id: 'contact'},
 ];
 

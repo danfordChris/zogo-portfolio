@@ -80,17 +80,17 @@ export const projects: Project[] = [
         link: '',
         category: ['web', 'mobile'],
     },
-    {
-        id: 'solomon-stockbroker',
-        title: 'Solomon StockBrocker App',
-        description:
-            'A stock exchange mobile app that enables the user to buy and sell stocks, view stock prices, and manage their portfolio. The app provides real-time stock market data, news, and analysis to help users make informed investment decisions.',
-        image: ssb,
-        images: [{id: '1', url: ssb, title: 'Main Screen'}],
-        tech: ['Flutter', 'Dart', 'REST API', 'Firebase'],
-        link: '',
-        category: 'mobile',
-    },
+    // {
+    //     id: 'solomon-stockbroker',
+    //     title: 'Solomon StockBrocker App',
+    //     description:
+    //         'A stock exchange mobile app that enables the user to buy and sell stocks, view stock prices, and manage their portfolio. The app provides real-time stock market data, news, and analysis to help users make informed investment decisions.',
+    //     image: ssb,
+    //     images: [{id: '1', url: ssb, title: 'Main Screen'}],
+    //     tech: ['Flutter', 'Dart', 'REST API', 'Firebase'],
+    //     link: '',
+    //     category: 'mobile',
+    // },
     {
         id: 'bantu-soko',
         title: 'Bantu Soko App',
@@ -102,19 +102,19 @@ export const projects: Project[] = [
         link: 'https://play.google.com/store/apps/details?id=tz.bantu.soko.android&pcampaignid=web_share',
         category: 'mobile',
     },
-    {
-        id: 'imbeju-crdb',
-        title: 'Imbeju CRDB App',
-        description:
-            'An offline CRDB application that aims to handle the meetings (VIKOBA) for local people, allowing them to manage their finances, track contributions, and facilitate communication within their groups without the need for an internet connection.',
-        image: imbeju,
-        images: [
-            {id: '1', url: imbeju, title: 'Main Screen'},
-        ],
-        tech: ['Flutter', 'Dart', 'Offline-First', 'SQLite'],
-        link: '',
-        category: 'mobile',
-    },
+    // {
+    //     id: 'imbeju-crdb',
+    //     title: 'Imbeju CRDB App',
+    //     description:
+    //         'An offline CRDB application that aims to handle the meetings (VIKOBA) for local people, allowing them to manage their finances, track contributions, and facilitate communication within their groups without the need for an internet connection.',
+    //     image: imbeju,
+    //     images: [
+    //         {id: '1', url: imbeju, title: 'Main Screen'},
+    //     ],
+    //     tech: ['Flutter', 'Dart', 'Offline-First', 'SQLite'],
+    //     link: '',
+    //     category: 'mobile',
+    // },
     {
         id: 'code-challenge',
         title: 'Code challenge App',

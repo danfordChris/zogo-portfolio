@@ -102,6 +102,15 @@ const ModernFooter: React.FC<ModernFooterProps> = ({ mode }) => {
           )}
         >
           <a
+            href="#products"
+            className={clsx(
+              'font-medium transition-colors duration-300',
+              isDark ? 'hover:text-blue-400' : 'hover:text-blue-600'
+            )}
+          >
+            Products
+          </a>
+          <a
             href="#services"
             className={clsx(
               'font-medium transition-colors duration-300',
@@ -120,6 +129,15 @@ const ModernFooter: React.FC<ModernFooterProps> = ({ mode }) => {
             )}
           >
             ContentLab ↗
+          </a>
+          <a
+            href="/blog/"
+            className={clsx(
+              'font-medium transition-colors duration-300',
+              isDark ? 'hover:text-blue-400' : 'hover:text-blue-600'
+            )}
+          >
+            Blog
           </a>
           <a
             href="#projects"
